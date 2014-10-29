@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RMCollectionViewCell.h
 //  Rotten Mangoes
 //
 //  Created by Jacob Cho on 2014-10-29.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RMCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
-
