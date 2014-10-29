@@ -1,18 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7zK-5H-HOr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qk9-jN-y8t">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Reviews-->
+        <scene sceneID="e0H-7z-2gl">
+            <objects>
+                <viewController id="TtX-xk-buS" customClass="ReviewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IKt-1m-vnX"/>
+                        <viewControllerLayoutGuide type="bottom" id="OPL-Es-gPX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UZj-03-FWD">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-D4-Svp">
+                                <rect key="frame" x="63" y="72" width="657" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.1630401172" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSY-aR-B8Q">
+                                <rect key="frame" x="63" y="93" width="657" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.1630401172" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Peq-N9-wfS">
+                                <rect key="frame" x="63" y="114" width="657" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.1630401172" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-Zk-FJF">
+                                <rect key="frame" x="63" y="202" width="657" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBg-XJ-k9u">
+                                <rect key="frame" x="63" y="223" width="657" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8j-2o-gSZ">
+                                <rect key="frame" x="63" y="293" width="657" height="21"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OD-YG-sZa">
+                                <rect key="frame" x="63" y="314" width="657" height="21"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CJ-BW-ncA">
+                                <rect key="frame" x="63" y="335" width="657" height="44"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-Rt-SKn">
+                                <rect key="frame" x="63" y="181" width="657" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reviews" id="VPH-0i-mly"/>
+                    <connections>
+                        <outlet property="criticLabel1" destination="fcW-D4-Svp" id="VDD-ap-9qM"/>
+                        <outlet property="criticLabel2" destination="pRx-Rt-SKn" id="eDr-hE-5cH"/>
+                        <outlet property="criticLabel3" destination="b8j-2o-gSZ" id="N4a-gQ-YMq"/>
+                        <outlet property="publicationLabel1" destination="vSY-aR-B8Q" id="cGQ-0W-lQ9"/>
+                        <outlet property="publicationLabel2" destination="i0X-Zk-FJF" id="GV1-ay-HL5"/>
+                        <outlet property="publicationLabel3" destination="7OD-YG-sZa" id="r7e-Qr-AJ3"/>
+                        <outlet property="quoteLabel1" destination="Peq-N9-wfS" id="vRo-aW-FhM"/>
+                        <outlet property="quoteLabel2" destination="WBg-XJ-k9u" id="qC9-LV-XuE"/>
+                        <outlet property="quoteLabel3" destination="4CJ-BW-ncA" id="V9e-B8-ZXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UES-8d-nf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="279"/>
+        </scene>
+        <!--Movies In Theatres-->
         <scene sceneID="7XT-aG-hS1">
             <objects>
                 <collectionViewController id="7zK-5H-HOr" customClass="RMCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="BT3-aX-2ig">
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TQl-gH-59O" customClass="CoverFlowLayout">
-                            <size key="itemSize" width="245" height="333"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TQl-gH-59O">
+                            <size key="itemSize" width="200" height="241"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -22,18 +117,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="245" height="333"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="241"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-UZ-ssw">
-                                            <rect key="frame" x="0.0" y="0.0" width="245" height="333"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-c6-6Pc">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="241"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="customSize" width="200" height="241"/>
                                 <connections>
-                                    <outlet property="imageView" destination="eeg-UZ-ssw" id="41j-8F-hpH"/>
+                                    <outlet property="imageView" destination="VWm-c6-6Pc" id="gaJ-pt-rhV"/>
+                                    <segue destination="TtX-xk-buS" kind="push" identifier="showReviewsSegue" id="iGb-uF-qls"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -42,8 +138,27 @@
                             <outlet property="delegate" destination="7zK-5H-HOr" id="Wkr-ry-CZ4"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Movies In Theatres" id="O8S-2g-UFd"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1X-hh-EV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="269"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2OY-iX-Hh9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qk9-jN-y8t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bxK-kP-Ybr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7zK-5H-HOr" kind="relationship" relationship="rootViewController" id="ojj-MQ-9Ri"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otn-gX-bwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="149" y="279"/>
         </scene>

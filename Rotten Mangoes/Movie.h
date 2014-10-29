@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSDictionary *posters;
 @property (strong, nonatomic) NSString *thumbnail;
+@property (strong, nonatomic) NSString *idNumber;
 
 - (id) initWithTitle:(NSString *)title;
 + (id) movieWithTitle:(NSString *)title;
