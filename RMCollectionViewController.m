@@ -20,9 +20,16 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
+    [self loadMovies];
+
+}
+
+-(void)loadMovies {
     NSString *URL = [RT_URL stringByAppendingString:API_KEY];
+    NSString *extendedURL = [URL stringByAppendingString:@"&page_limit=50"];
     
-    NSURL *rtURL = [NSURL URLWithString:URL];
+    NSURL *rtURL = [NSURL URLWithString:extendedURL];
     NSData *data = [NSData dataWithContentsOfURL:rtURL];
     NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     
@@ -42,9 +49,6 @@ static NSString * const reuseIdentifier = @"Cell";
         [self.movies addObject:movie];
         
     }
-    
-    NSLog(@"%@", self.movies);
-
 
 }
 

@@ -16,7 +16,6 @@
 
 - (id) initWithTitle:(NSString *)title;
 + (id) movieWithTitle:(NSString *)title;
-- (NSURL *) thumbnailURL;
 - (NSURL *) detailPosterURL;
 
 @end

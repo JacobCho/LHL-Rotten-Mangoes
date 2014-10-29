@@ -16,6 +16,7 @@
 		52BE142F1A014FB00090A2B0 /* RMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE142E1A014FB00090A2B0 /* RMCollectionViewController.m */; };
 		52BE14351A0151B00090A2B0 /* RMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14341A0151B00090A2B0 /* RMCollectionViewCell.m */; };
 		52BE14381A0152980090A2B0 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14371A0152980090A2B0 /* Movie.m */; };
+		52BE143B1A0178F80090A2B0 /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE143A1A0178F80090A2B0 /* CoverFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		52BE14341A0151B00090A2B0 /* RMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCollectionViewCell.m; sourceTree = "<group>"; };
 		52BE14361A0152980090A2B0 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		52BE14371A0152980090A2B0 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		52BE14391A0178F80090A2B0 /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = "<group>"; };
+		52BE143A1A0178F80090A2B0 /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 		52BE14311A014FBF0090A2B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52BE14391A0178F80090A2B0 /* CoverFlowLayout.h */,
+				52BE143A1A0178F80090A2B0 /* CoverFlowLayout.m */,
 				52BE14111A014F670090A2B0 /* Main.storyboard */,
 				52BE14331A0151B00090A2B0 /* RMCollectionViewCell.h */,
 				52BE14341A0151B00090A2B0 /* RMCollectionViewCell.m */,
@@ -258,6 +263,7 @@
 				52BE14381A0152980090A2B0 /* Movie.m in Sources */,
 				52BE140A1A014F670090A2B0 /* main.m in Sources */,
 				52BE14351A0151B00090A2B0 /* RMCollectionViewCell.m in Sources */,
+				52BE143B1A0178F80090A2B0 /* CoverFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
