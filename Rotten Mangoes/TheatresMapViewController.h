@@ -15,6 +15,7 @@
 
 @interface TheatresMapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 @property (strong, nonatomic) Movie *movie;
 @property (strong, nonatomic) NSMutableArray *theatresNearby;
 

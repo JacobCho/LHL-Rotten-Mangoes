@@ -7,6 +7,7 @@
 //
 
 #import "TheatresMapViewController.h"
+#import "TheatreTableViewController.h"
 
 @interface TheatresMapViewController ()
 
@@ -27,6 +28,14 @@
     
 }
 
+-(void)setTableView {
+    TheatreTableViewController *theatreTable = self.childViewControllers[0];
+    
+    theatreTable.theatresNearby = self.theatresNearby;
+    
+    [theatreTable.tableView reloadData];
+    
+}
 
 
 -(void)setUpMapView {
@@ -109,7 +118,7 @@
         [self.theatresNearby addObject:theatre];
         
     }
-    
+    [self setTableView];
     [self setupMarkers:self.theatresNearby];
     
 }

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qk9-jN-y8t">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Reviews-->
@@ -127,12 +128,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-t7-ik2">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-t7-ik2">
+                                <rect key="frame" x="-1" y="0.0" width="738" height="414"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dBo-t7-ik2" firstAttribute="bottom" secondItem="cEg-cP-pSz" secondAttribute="top" id="NKs-hZ-JNs"/>
+                            <constraint firstItem="dBo-t7-ik2" firstAttribute="top" secondItem="edA-nY-Bag" secondAttribute="top" id="Y50-RZ-4w5"/>
+                            <constraint firstItem="dBo-t7-ik2" firstAttribute="leading" secondItem="edA-nY-Bag" secondAttribute="leadingMargin" constant="-17" id="ir2-BW-RA7"/>
+                            <constraint firstItem="dBo-t7-ik2" firstAttribute="centerX" secondItem="edA-nY-Bag" secondAttribute="centerX" id="ksh-O2-ykA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qg7-6y-OT8"/>
                     <connections>
@@ -155,20 +162,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZy-oD-0JJ">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQI-m1-7GE"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TxQ-dl-kJU">
+                                <rect key="frame" x="0.0" y="0.0" width="738" height="250"/>
                             </mapView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMr-44-zjP">
+                                <rect key="frame" x="0.0" y="258" width="736" height="161"/>
+                                <connections>
+                                    <segue destination="Mnv-CC-ckQ" kind="embed" id="ewQ-5c-AvR"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yhc-Ul-SLL"/>
                     <connections>
-                        <outlet property="mapView" destination="PZy-oD-0JJ" id="ASH-eP-J2d"/>
+                        <outlet property="mapView" destination="TxQ-dl-kJU" id="Zfq-QH-is4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEs-lL-EhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="537"/>
+            <point key="canvasLocation" x="3207" y="887"/>
+        </scene>
+        <!--Theatre Table View Controller-->
+        <scene sceneID="yrZ-id-ZHx">
+            <objects>
+                <tableViewController id="Mnv-CC-ckQ" customClass="TheatreTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="22" sectionFooterHeight="22" id="Po3-c7-atn">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="161"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TheatreCell" rowHeight="77" id="AdB-9M-VuL" customClass="TheatreTableViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AdB-9M-VuL" id="DVT-4s-bJh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-aN-fWo">
+                                            <rect key="frame" x="19" y="27" width="90" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theatre Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g18-LO-su3">
+                                            <rect key="frame" x="168" y="12" width="541" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theatre Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3u-Tb-dbA">
+                                            <rect key="frame" x="168" y="44" width="541" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="theatreAddressLabel" destination="P3u-Tb-dbA" id="MxD-eY-uwt"/>
+                                    <outlet property="theatreDistanceLabel" destination="08Z-aN-fWo" id="Q13-HC-sYU"/>
+                                    <outlet property="theatreNameLabel" destination="g18-LO-su3" id="veJ-Qz-rvs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mnv-CC-ckQ" id="lbT-2X-4ZG"/>
+                            <outlet property="delegate" destination="Mnv-CC-ckQ" id="vLE-8H-VMD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5j-Fx-0sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4080" y="892.5"/>
         </scene>
         <!--Movies In Theatres-->
         <scene sceneID="7XT-aG-hS1">

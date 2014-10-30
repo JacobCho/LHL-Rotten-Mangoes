@@ -23,6 +23,8 @@
 		52BE14471A02B4290090A2B0 /* TheatresMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14461A02B4290090A2B0 /* TheatresMapViewController.m */; };
 		52BE14491A02B4BF0090A2B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BE14481A02B4BF0090A2B0 /* MapKit.framework */; };
 		52BE144C1A02D0CF0090A2B0 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144B1A02D0CF0090A2B0 /* Theatre.m */; };
+		52BE144F1A02EC9E0090A2B0 /* TheatreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */; };
+		52BE14521A02EF460090A2B0 /* TheatreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		52BE14481A02B4BF0090A2B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		52BE144A1A02D0CF0090A2B0 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
 		52BE144B1A02D0CF0090A2B0 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
+		52BE144D1A02EC9E0090A2B0 /* TheatreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreTableViewController.h; sourceTree = "<group>"; };
+		52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreTableViewController.m; sourceTree = "<group>"; };
+		52BE14501A02EF460090A2B0 /* TheatreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreTableViewCell.h; sourceTree = "<group>"; };
+		52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,8 @@
 				52BE14391A0178F80090A2B0 /* CoverFlowLayout.h */,
 				52BE143A1A0178F80090A2B0 /* CoverFlowLayout.m */,
 				52BE14111A014F670090A2B0 /* Main.storyboard */,
+				52BE14501A02EF460090A2B0 /* TheatreTableViewCell.h */,
+				52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */,
 				52BE14331A0151B00090A2B0 /* RMCollectionViewCell.h */,
 				52BE14341A0151B00090A2B0 /* RMCollectionViewCell.m */,
 				52BE14141A014F670090A2B0 /* Images.xcassets */,
@@ -183,6 +191,8 @@
 				52BE14431A01BA640090A2B0 /* WebViewController.m */,
 				52BE14451A02B4290090A2B0 /* TheatresMapViewController.h */,
 				52BE14461A02B4290090A2B0 /* TheatresMapViewController.m */,
+				52BE144D1A02EC9E0090A2B0 /* TheatreTableViewController.h */,
+				52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -287,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BE14521A02EF460090A2B0 /* TheatreTableViewCell.m in Sources */,
 				52BE142F1A014FB00090A2B0 /* RMCollectionViewController.m in Sources */,
 				52BE140D1A014F670090A2B0 /* AppDelegate.m in Sources */,
 				52BE143E1A0187DB0090A2B0 /* ReviewsViewController.m in Sources */,
+				52BE144F1A02EC9E0090A2B0 /* TheatreTableViewController.m in Sources */,
 				52BE14381A0152980090A2B0 /* Movie.m in Sources */,
 				52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */,
 				52BE140A1A014F670090A2B0 /* main.m in Sources */,
@@ -488,6 +500,7 @@
 				52BE14291A014F670090A2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52BE142A1A014F670090A2B0 /* Build configuration list for PBXNativeTarget "Rotten MangoesTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				52BE142C1A014F670090A2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
