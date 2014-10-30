@@ -30,4 +30,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *publicationLabel3;
 @property (weak, nonatomic) IBOutlet UILabel *quoteLabel3;
 
+- (IBAction)siteBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 @end

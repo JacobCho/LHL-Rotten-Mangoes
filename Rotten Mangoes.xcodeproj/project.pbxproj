@@ -19,6 +19,7 @@
 		52BE143B1A0178F80090A2B0 /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE143A1A0178F80090A2B0 /* CoverFlowLayout.m */; };
 		52BE143E1A0187DB0090A2B0 /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE143D1A0187DB0090A2B0 /* ReviewsViewController.m */; };
 		52BE14411A01A9430090A2B0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14401A01A9430090A2B0 /* Review.m */; };
+		52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14431A01BA640090A2B0 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		52BE143D1A0187DB0090A2B0 /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewsViewController.m; sourceTree = "<group>"; };
 		52BE143F1A01A9430090A2B0 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		52BE14401A01A9430090A2B0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		52BE14421A01BA640090A2B0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		52BE14431A01BA640090A2B0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				52BE142E1A014FB00090A2B0 /* RMCollectionViewController.m */,
 				52BE143C1A0187DB0090A2B0 /* ReviewsViewController.h */,
 				52BE143D1A0187DB0090A2B0 /* ReviewsViewController.m */,
+				52BE14421A01BA640090A2B0 /* WebViewController.h */,
+				52BE14431A01BA640090A2B0 /* WebViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				52BE140D1A014F670090A2B0 /* AppDelegate.m in Sources */,
 				52BE143E1A0187DB0090A2B0 /* ReviewsViewController.m in Sources */,
 				52BE14381A0152980090A2B0 /* Movie.m in Sources */,
+				52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */,
 				52BE140A1A014F670090A2B0 /* main.m in Sources */,
 				52BE14411A01A9430090A2B0 /* Review.m in Sources */,
 				52BE14351A0151B00090A2B0 /* RMCollectionViewCell.m in Sources */,

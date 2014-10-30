@@ -82,7 +82,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reviews" id="VPH-0i-mly"/>
+                    <navigationItem key="navigationItem" title="Reviews" id="VPH-0i-mly">
+                        <barButtonItem key="rightBarButtonItem" title="Site" id="Yel-9k-lXQ">
+                            <connections>
+                                <action selector="siteBarButtonItemPressed:" destination="TtX-xk-buS" id="pug-wQ-4O9"/>
+                                <segue destination="Bsm-HC-1T9" kind="push" identifier="showWebViewSegue" id="FJw-75-fBa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="criticLabel1" destination="fcW-D4-Svp" id="VDD-ap-9qM"/>
                         <outlet property="criticLabel2" destination="pRx-Rt-SKn" id="eDr-hE-5cH"/>
@@ -98,6 +105,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UES-8d-nf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2124" y="279"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="1ch-oH-LaJ">
+            <objects>
+                <viewController id="Bsm-HC-1T9" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t0d-Zr-48A"/>
+                        <viewControllerLayoutGuide type="bottom" id="cEg-cP-pSz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edA-nY-Bag">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-t7-ik2">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qg7-6y-OT8"/>
+                    <connections>
+                        <outlet property="webView" destination="dBo-t7-ik2" id="G1Q-hU-c1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNG-nI-jZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3109" y="296"/>
         </scene>
         <!--Movies In Theatres-->
         <scene sceneID="7XT-aG-hS1">

@@ -7,6 +7,7 @@
 //
 
 #import "ReviewsViewController.h"
+#import "WebViewController.h"
 
 @interface ReviewsViewController ()
 
@@ -71,4 +72,17 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"showWebViewSegue"]) {
+        
+        WebViewController *WVC = segue.destinationViewController;
+        WVC.movie = self.movie;
+        
+    }
+    
+}
+
+- (IBAction)siteBarButtonItemPressed:(UIBarButtonItem *)sender {
+}
 @end

@@ -31,72 +31,28 @@ static NSString * const reuseIdentifier = @"Cell";
     NSString *extendedURL = [URL stringByAppendingString:@"&page_limit=50"];
     
     NSURL *rtURL = [NSURL URLWithString:extendedURL];
-//    NSData *data = [NSData dataWithContentsOfURL:rtURL];
-//    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    NSData *data = [NSData dataWithContentsOfURL:rtURL];
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     
-    NSURLSessionConfiguration *sessionConfig =
-    [NSURLSessionConfiguration defaultSessionConfiguration];
+    self.movies = [NSMutableArray array];
     
-    NSURLSession *session =
-    [NSURLSession sessionWithConfiguration:sessionConfig
-                                  delegate:self
-                             delegateQueue:nil];
+    NSArray *moviesArray = [dataDictionary objectForKeyedSubscript:@"movies"];
     
-    NSURLSessionDownloadTask *getImageTask =
-    [session downloadTaskWithURL:rtURL
-     
-               completionHandler:^(NSURL *URL,
-                                   NSURLResponse *response,
-                                   NSError *error) {
-                   // 2
-                   NSData *data = [NSData dataWithContentsOfURL:URL];
-                   NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                   
-                    self.movies = [NSMutableArray array];
-                   
-                    NSArray *moviesArray = [dataDictionary objectForKeyedSubscript:@"movies"];
-                   
-                   
-                   for (NSDictionary *moviesDictionary in moviesArray) {
-                       
-                       Movie *movie = [Movie movieWithTitle:[moviesDictionary objectForKey:@"title"]];
-                       movie.idNumber = [moviesDictionary objectForKey:@"id"];
-                       // "Posters" is a JSON Object within "Title"
-                       movie.posters = [moviesDictionary objectForKey:@"posters"];
-                       // "Thumbnail is an Object within "Posters"
-                       movie.thumbnail = [movie.posters objectForKey:@"thumbnail"];
-                       
-                       [self.movies addObject:movie];
-                       
-                   }
-                   //3
-                   dispatch_async(dispatch_get_main_queue(), ^{
-                       [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-                       [self.collectionView reloadData];
-
-                   });
-               }];
     
-    // 4
-    [getImageTask resume];
-    
-//    self.movies = [NSMutableArray array];
-//    
-//    NSArray *moviesArray = [dataDictionary objectForKeyedSubscript:@"movies"];
-//    
-//    
-//    for (NSDictionary *moviesDictionary in moviesArray) {
-//        
-//        Movie *movie = [Movie movieWithTitle:[moviesDictionary objectForKey:@"title"]];
-//        movie.idNumber = [moviesDictionary objectForKey:@"id"];
-//        // "Posters" is a JSON Object within "Title"
-//        movie.posters = [moviesDictionary objectForKey:@"posters"];
-//        // "Thumbnail is an Object within "Posters"
-//        movie.thumbnail = [movie.posters objectForKey:@"thumbnail"];
-//        
-//        [self.movies addObject:movie];
-//        
-//    }
+    for (NSDictionary *moviesDictionary in moviesArray) {
+        
+        Movie *movie = [Movie movieWithTitle:[moviesDictionary objectForKey:@"title"]];
+        movie.idNumber = [moviesDictionary objectForKey:@"id"];
+        // "Posters" is a JSON Object within "Title"
+        movie.posters = [moviesDictionary objectForKey:@"posters"];
+        // "Thumbnail is an Object within "Posters"
+        movie.thumbnail = [movie.posters objectForKey:@"thumbnail"];
+        movie.links = [moviesDictionary objectForKey:@"links"];
+        movie.alternateURL = [movie.links objectForKey:@"alternate"];
+        
+        [self.movies addObject:movie];
+        
+    }
 
 }
 
@@ -163,8 +119,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-
-    Movie *movie = [self.movies objectAtIndex:indexPath.row];
     
     return YES;
 }
