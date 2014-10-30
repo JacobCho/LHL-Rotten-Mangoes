@@ -37,48 +37,57 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-Rt-SKn">
+                                <rect key="frame" x="63" y="158" width="657" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-Zk-FJF">
-                                <rect key="frame" x="63" y="202" width="657" height="21"/>
+                                <rect key="frame" x="63" y="179" width="657" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBg-XJ-k9u">
-                                <rect key="frame" x="63" y="223" width="657" height="44"/>
+                                <rect key="frame" x="63" y="200" width="657" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8j-2o-gSZ">
-                                <rect key="frame" x="63" y="293" width="657" height="21"/>
+                                <rect key="frame" x="63" y="244" width="657" height="21"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OD-YG-sZa">
-                                <rect key="frame" x="63" y="314" width="657" height="21"/>
+                                <rect key="frame" x="63" y="265" width="657" height="21"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CJ-BW-ncA">
-                                <rect key="frame" x="63" y="335" width="657" height="44"/>
+                                <rect key="frame" x="63" y="286" width="657" height="44"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.69803921570000005" blue="0.42745098040000001" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-Rt-SKn">
-                                <rect key="frame" x="63" y="181" width="657" height="21"/>
-                                <color key="backgroundColor" red="1" green="0.62549710020000004" blue="0.04981909139" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFO-0r-elK">
+                                <rect key="frame" x="582" y="364" width="138" height="30"/>
+                                <state key="normal" title="Show Theatres Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aae-OV-JVg" kind="push" identifier="showTheatresSegue" id="XUI-Pl-ATo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,7 +141,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNG-nI-jZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3109" y="296"/>
+            <point key="canvasLocation" x="2989" y="-58"/>
+        </scene>
+        <!--Theatres Map View Controller-->
+        <scene sceneID="T2F-Xy-85H">
+            <objects>
+                <viewController id="aae-OV-JVg" customClass="TheatresMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEe-In-tpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="y3M-Me-st9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGv-RT-pGl">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZy-oD-0JJ">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yhc-Ul-SLL"/>
+                    <connections>
+                        <outlet property="mapView" destination="PZy-oD-0JJ" id="ASH-eP-J2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEs-lL-EhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2989" y="537"/>
         </scene>
         <!--Movies In Theatres-->
         <scene sceneID="7XT-aG-hS1">

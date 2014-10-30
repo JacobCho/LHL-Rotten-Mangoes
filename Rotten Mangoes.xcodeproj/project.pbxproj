@@ -20,6 +20,9 @@
 		52BE143E1A0187DB0090A2B0 /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE143D1A0187DB0090A2B0 /* ReviewsViewController.m */; };
 		52BE14411A01A9430090A2B0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14401A01A9430090A2B0 /* Review.m */; };
 		52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14431A01BA640090A2B0 /* WebViewController.m */; };
+		52BE14471A02B4290090A2B0 /* TheatresMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14461A02B4290090A2B0 /* TheatresMapViewController.m */; };
+		52BE14491A02B4BF0090A2B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BE14481A02B4BF0090A2B0 /* MapKit.framework */; };
+		52BE144C1A02D0CF0090A2B0 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144B1A02D0CF0090A2B0 /* Theatre.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,11 @@
 		52BE14401A01A9430090A2B0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
 		52BE14421A01BA640090A2B0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		52BE14431A01BA640090A2B0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		52BE14451A02B4290090A2B0 /* TheatresMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatresMapViewController.h; sourceTree = "<group>"; };
+		52BE14461A02B4290090A2B0 /* TheatresMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatresMapViewController.m; sourceTree = "<group>"; };
+		52BE14481A02B4BF0090A2B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		52BE144A1A02D0CF0090A2B0 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		52BE144B1A02D0CF0090A2B0 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BE14491A02B4BF0090A2B0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 		52BE13FB1A014F670090A2B0 = {
 			isa = PBXGroup;
 			children = (
+				52BE14481A02B4BF0090A2B0 /* MapKit.framework */,
 				52BE14061A014F670090A2B0 /* Rotten Mangoes */,
 				52BE14201A014F670090A2B0 /* Rotten MangoesTests */,
 				52BE14051A014F670090A2B0 /* Products */,
@@ -140,6 +150,8 @@
 			children = (
 				52BE143F1A01A9430090A2B0 /* Review.h */,
 				52BE14401A01A9430090A2B0 /* Review.m */,
+				52BE144A1A02D0CF0090A2B0 /* Theatre.h */,
+				52BE144B1A02D0CF0090A2B0 /* Theatre.m */,
 				52BE14361A0152980090A2B0 /* Movie.h */,
 				52BE14371A0152980090A2B0 /* Movie.m */,
 			);
@@ -169,6 +181,8 @@
 				52BE143D1A0187DB0090A2B0 /* ReviewsViewController.m */,
 				52BE14421A01BA640090A2B0 /* WebViewController.h */,
 				52BE14431A01BA640090A2B0 /* WebViewController.m */,
+				52BE14451A02B4290090A2B0 /* TheatresMapViewController.h */,
+				52BE14461A02B4290090A2B0 /* TheatresMapViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -279,7 +293,9 @@
 				52BE14381A0152980090A2B0 /* Movie.m in Sources */,
 				52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */,
 				52BE140A1A014F670090A2B0 /* main.m in Sources */,
+				52BE144C1A02D0CF0090A2B0 /* Theatre.m in Sources */,
 				52BE14411A01A9430090A2B0 /* Review.m in Sources */,
+				52BE14471A02B4290090A2B0 /* TheatresMapViewController.m in Sources */,
 				52BE14351A0151B00090A2B0 /* RMCollectionViewCell.m in Sources */,
 				52BE143B1A0178F80090A2B0 /* CoverFlowLayout.m in Sources */,
 			);

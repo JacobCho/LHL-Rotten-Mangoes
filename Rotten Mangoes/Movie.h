@@ -20,5 +20,6 @@
 - (id) initWithTitle:(NSString *)title;
 + (id) movieWithTitle:(NSString *)title;
 - (NSURL *) detailPosterURL;
+- (NSString *) URLname;
 
 @end

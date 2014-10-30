@@ -8,6 +8,7 @@
 
 #import "ReviewsViewController.h"
 #import "WebViewController.h"
+#import "TheatresMapViewController.h"
 
 @interface ReviewsViewController ()
 
@@ -42,9 +43,7 @@
         
         Review *review = [[Review alloc] init];
         review.critic = [reviewsDictionary objectForKey:@"critic"];
-        // "Posters" is a JSON Object within "Title"
         review.publication = [reviewsDictionary objectForKey:@"publication"];
-        // "Thumbnail is an Object within "Posters"
         review.quote = [reviewsDictionary objectForKey:@"quote"];
         
         [self.reviews addObject:review];
@@ -78,6 +77,10 @@
         
         WebViewController *WVC = segue.destinationViewController;
         WVC.movie = self.movie;
+        
+    } else if ([[segue identifier] isEqualToString:@"showTheatresSegue"]) {
+        TheatresMapViewController *theatres = segue.destinationViewController;
+        theatres.movie = self.movie;
         
     }
     

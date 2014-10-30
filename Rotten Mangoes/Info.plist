@@ -30,6 +30,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We Need your location, yo</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>

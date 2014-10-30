@@ -31,4 +31,10 @@
     return [NSURL URLWithString:detailPoster];
 }
 
+- (NSString *) URLname {
+    
+    NSString *URLname = [self.title stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    return URLname;
+}
+
 @end
