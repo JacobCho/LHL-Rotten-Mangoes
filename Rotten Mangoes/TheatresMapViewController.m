@@ -114,6 +114,13 @@
         theatre.address = [theatresDictionary objectForKey:@"address"];
         theatre.latitude = [theatresDictionary objectForKey:@"lat"];
         theatre.longitude = [theatresDictionary objectForKey:@"lng"];
+        
+        CLLocation *location = [[CLLocation alloc] initWithLatitude:[theatre.latitude floatValue] longitude:[theatre.longitude floatValue]];
+        
+        CLLocationDistance distanceToTheatre = [location distanceFromLocation:self.locationManager.location];
+        theatre.distance = [[NSNumber alloc] initWithDouble:distanceToTheatre];
+        
+        
         NSLog(@"%@", theatre.name);
         [self.theatresNearby addObject:theatre];
         
@@ -140,6 +147,7 @@
     
     
 }
+
 
 
 /*

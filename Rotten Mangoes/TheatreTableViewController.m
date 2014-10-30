@@ -42,7 +42,7 @@
     
     cell.theatreNameLabel.text = theatre.name;
     cell.theatreAddressLabel.text = theatre.address;
-
+    cell.theatreDistanceLabel.text = [NSString stringWithFormat:@"%.1fkm", (double)([theatre.distance doubleValue]/1000)];
     
     return cell;
 }
