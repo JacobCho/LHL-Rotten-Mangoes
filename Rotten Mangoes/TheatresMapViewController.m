@@ -8,8 +8,13 @@
 
 #import "TheatresMapViewController.h"
 #import "TheatreTableViewController.h"
+#import "TheatreAnnotation.h"
 
-@interface TheatresMapViewController ()
+@interface TheatresMapViewController () {
+    
+    NSArray *pinImages;
+    int imageCounter;
+}
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @end
@@ -25,6 +30,13 @@
     
     [self reverseGeocode:self.locationManager.location];
     
+    imageCounter = 0;
+    UIImage *pinImage1 = [UIImage imageNamed:@"pin0grey"];
+    UIImage *pinImage2 = [UIImage imageNamed:@"pin1grey"];
+    UIImage *pinImage3 = [UIImage imageNamed:@"pin2"];
+    UIImage *pinImage4 = [UIImage imageNamed:@"pin3"];
+    UIImage *pinImage5 = [UIImage imageNamed:@"pin4"];
+    pinImages = @[pinImage1, pinImage2, pinImage3, pinImage4, pinImage5];
     
 }
 
@@ -64,9 +76,6 @@
     startingRegion.span.longitudeDelta = 0.02;
     
     [self.mapView setRegion:startingRegion];
-    
-    
-
     
 }
 
@@ -133,14 +142,12 @@
 -(void)setupMarkers:(NSMutableArray *)theatresArray{
     
     for (Theatre *theatreToMark in theatresArray) {
-        
-        MKPointAnnotation *theatreMarker=[[MKPointAnnotation alloc] init];
         CLLocationCoordinate2D theatreLocation;
         theatreLocation.latitude = [theatreToMark.latitude doubleValue];
         theatreLocation.longitude = [theatreToMark.longitude doubleValue];
         
-        theatreMarker.coordinate = theatreLocation;
-        theatreMarker.title = theatreToMark.name;
+        TheatreAnnotation *theatreMarker=[[TheatreAnnotation alloc] initWithTitle:theatreToMark.name andCoordinate:theatreLocation];
+        theatreMarker.image = [self getPinImage:imageCounter];
         
         [self.mapView addAnnotation:theatreMarker];
     }
@@ -148,7 +155,45 @@
     
 }
 
+-(UIImage *)getPinImage:(int)counter {
+    
+    UIImage *pinImage = pinImages[counter];
+    
+    if (counter == 4) {
+        imageCounter = 0;
+    } else {
+        imageCounter++;
+    }
+    
+    return pinImage;
+    
+    
+}
 
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
+{
+    
+    if ([annotation isKindOfClass:[TheatreAnnotation class]]) {
+        
+        TheatreAnnotation *theatreAnnotation = (TheatreAnnotation *)annotation;
+        
+        MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomAnnotation"];
+        
+        if (annotationView == nil) {
+            
+            annotationView = theatreAnnotation.annotationView;
+        }
+        else {
+            annotationView.annotation = annotation;
+        }
+        
+        return annotationView;
+    }
+    else {
+        return nil;
+    }
+
+}
 
 /*
 #pragma mark - Navigation

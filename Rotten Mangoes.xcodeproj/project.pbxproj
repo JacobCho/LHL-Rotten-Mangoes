@@ -26,6 +26,12 @@
 		52BE144F1A02EC9E0090A2B0 /* TheatreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */; };
 		52BE14521A02EF460090A2B0 /* TheatreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */; };
 		52BE14551A03208A0090A2B0 /* MovieCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14541A03208A0090A2B0 /* MovieCache.m */; };
+		52BE145B1A040B8F0090A2B0 /* pin0grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE14561A040B8F0090A2B0 /* pin0grey@2x.png */; };
+		52BE145C1A040B8F0090A2B0 /* pin1grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE14571A040B8F0090A2B0 /* pin1grey@2x.png */; };
+		52BE145D1A040B8F0090A2B0 /* pin2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE14581A040B8F0090A2B0 /* pin2@2x.png */; };
+		52BE145E1A040B8F0090A2B0 /* pin3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE14591A040B8F0090A2B0 /* pin3@2x.png */; };
+		52BE145F1A040B8F0090A2B0 /* pin4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE145A1A040B8F0090A2B0 /* pin4@2x.png */; };
+		52BE14621A0413670090A2B0 /* TheatreAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14611A0413670090A2B0 /* TheatreAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,13 @@
 		52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreTableViewCell.m; sourceTree = "<group>"; };
 		52BE14531A03208A0090A2B0 /* MovieCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCache.h; sourceTree = "<group>"; };
 		52BE14541A03208A0090A2B0 /* MovieCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCache.m; sourceTree = "<group>"; };
+		52BE14561A040B8F0090A2B0 /* pin0grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin0grey@2x.png"; sourceTree = "<group>"; };
+		52BE14571A040B8F0090A2B0 /* pin1grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin1grey@2x.png"; sourceTree = "<group>"; };
+		52BE14581A040B8F0090A2B0 /* pin2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin2@2x.png"; sourceTree = "<group>"; };
+		52BE14591A040B8F0090A2B0 /* pin3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin3@2x.png"; sourceTree = "<group>"; };
+		52BE145A1A040B8F0090A2B0 /* pin4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin4@2x.png"; sourceTree = "<group>"; };
+		52BE14601A0413670090A2B0 /* TheatreAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreAnnotation.h; sourceTree = "<group>"; };
+		52BE14611A0413670090A2B0 /* TheatreAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +142,11 @@
 		52BE14071A014F670090A2B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52BE14561A040B8F0090A2B0 /* pin0grey@2x.png */,
+				52BE14571A040B8F0090A2B0 /* pin1grey@2x.png */,
+				52BE14581A040B8F0090A2B0 /* pin2@2x.png */,
+				52BE14591A040B8F0090A2B0 /* pin3@2x.png */,
+				52BE145A1A040B8F0090A2B0 /* pin4@2x.png */,
 				52BE140B1A014F670090A2B0 /* AppDelegate.h */,
 				52BE140C1A014F670090A2B0 /* AppDelegate.m */,
 				52BE14081A014F670090A2B0 /* Info.plist */,
@@ -157,6 +175,8 @@
 		52BE14301A014FB80090A2B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52BE14601A0413670090A2B0 /* TheatreAnnotation.h */,
+				52BE14611A0413670090A2B0 /* TheatreAnnotation.m */,
 				52BE143F1A01A9430090A2B0 /* Review.h */,
 				52BE14401A01A9430090A2B0 /* Review.m */,
 				52BE144A1A02D0CF0090A2B0 /* Theatre.h */,
@@ -283,8 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52BE14131A014F670090A2B0 /* Main.storyboard in Resources */,
+				52BE145D1A040B8F0090A2B0 /* pin2@2x.png in Resources */,
+				52BE145E1A040B8F0090A2B0 /* pin3@2x.png in Resources */,
+				52BE145F1A040B8F0090A2B0 /* pin4@2x.png in Resources */,
 				52BE14181A014F670090A2B0 /* LaunchScreen.xib in Resources */,
+				52BE145B1A040B8F0090A2B0 /* pin0grey@2x.png in Resources */,
 				52BE14151A014F670090A2B0 /* Images.xcassets in Resources */,
+				52BE145C1A040B8F0090A2B0 /* pin1grey@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +332,7 @@
 				52BE140D1A014F670090A2B0 /* AppDelegate.m in Sources */,
 				52BE143E1A0187DB0090A2B0 /* ReviewsViewController.m in Sources */,
 				52BE144F1A02EC9E0090A2B0 /* TheatreTableViewController.m in Sources */,
+				52BE14621A0413670090A2B0 /* TheatreAnnotation.m in Sources */,
 				52BE14381A0152980090A2B0 /* Movie.m in Sources */,
 				52BE14441A01BA640090A2B0 /* WebViewController.m in Sources */,
 				52BE140A1A014F670090A2B0 /* main.m in Sources */,
