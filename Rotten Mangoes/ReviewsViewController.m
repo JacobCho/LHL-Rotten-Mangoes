@@ -46,13 +46,35 @@
         review.publication = [reviewsDictionary objectForKey:@"publication"];
         review.quote = [reviewsDictionary objectForKey:@"quote"];
         
+        if (review == nil) {
+            
+            NSNull *nullObject = [[NSNull alloc] init];
+            [self.reviews addObject:nullObject];
+        } else {
+        
         [self.reviews addObject:review];
+        }
         
     }
 
 }
 
 -(void)setUpViews {
+    
+    if (self.reviews == nil || [self.reviews count] == 0) {
+        self.criticLabel1.text = @"";
+        self.publicationLabel1.text = @"";
+        self.quoteLabel1.text = @"";
+
+        self.criticLabel2.text = @"";
+        self.publicationLabel2.text = @"";
+        self.quoteLabel2.text = @"";
+
+        self.criticLabel3.text = @"";
+        self.publicationLabel3.text = @"";
+        self.quoteLabel3.text = @"";
+
+    } else {
     
     Review *review1 = self.reviews[0];
     self.criticLabel1.text = review1.critic;
@@ -68,6 +90,7 @@
     self.criticLabel3.text = review3.critic;
     self.publicationLabel3.text = review3.publication;
     self.quoteLabel3.text = review3.quote;
+    }
     
 }
 

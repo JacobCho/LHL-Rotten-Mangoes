@@ -10,7 +10,7 @@
 
 @interface RMCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
+@property (strong, nonatomic) NSString *idNumber;
 
 
 @end

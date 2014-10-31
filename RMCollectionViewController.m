@@ -9,8 +9,11 @@
 #import "RMCollectionViewController.h"
 #import "RMCollectionViewCell.h"
 #import "ReviewsViewController.h"
+#import "MovieCache.h"
 
 @interface RMCollectionViewController ()
+
+@property (nonatomic, strong) MovieCache *movieCache;
 
 @end
 
@@ -22,6 +25,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
    
+    self.movieCache = [[MovieCache alloc] initMovieCacheWithSize:5];
+    
     [self loadMovies];
 
 }
@@ -92,18 +97,28 @@ static NSString * const reuseIdentifier = @"Cell";
      RMCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     
-     Movie *movie = [self.movies objectAtIndex:indexPath.row];
+    Movie *movie = [self.movies objectAtIndex:indexPath.row];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-
-        dispatch_async(dispatch_get_main_queue(), ^{
+    if ([self.movieCache containsMovieWithIdNumber:movie.idNumber]) {
+        
+        cell.imageView.image = [self.movieCache posterImageWithIdNumber:movie.idNumber];
+        cell.idNumber = movie.idNumber;
+    }
+    else {
+    
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSData *imageData = [NSData dataWithContentsOfURL:movie.detailPosterURL];
-            UIImage *image = [UIImage imageWithData:imageData];
-            
-            cell.imageView.image = image;
-            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                UIImage *image = [UIImage imageWithData:imageData];
+                
+                cell.imageView.image = image;
+                cell.idNumber = movie.idNumber;
+                
+                [self.movieCache cacheMovie:movie withPoster:image];
+            });
         });
-    });
+    }
     
     return cell;
 }

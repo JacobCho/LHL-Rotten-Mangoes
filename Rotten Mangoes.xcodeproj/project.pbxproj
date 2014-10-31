@@ -25,6 +25,7 @@
 		52BE144C1A02D0CF0090A2B0 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144B1A02D0CF0090A2B0 /* Theatre.m */; };
 		52BE144F1A02EC9E0090A2B0 /* TheatreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */; };
 		52BE14521A02EF460090A2B0 /* TheatreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */; };
+		52BE14551A03208A0090A2B0 /* MovieCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE14541A03208A0090A2B0 /* MovieCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		52BE144E1A02EC9E0090A2B0 /* TheatreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreTableViewController.m; sourceTree = "<group>"; };
 		52BE14501A02EF460090A2B0 /* TheatreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreTableViewCell.h; sourceTree = "<group>"; };
 		52BE14511A02EF460090A2B0 /* TheatreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreTableViewCell.m; sourceTree = "<group>"; };
+		52BE14531A03208A0090A2B0 /* MovieCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCache.h; sourceTree = "<group>"; };
+		52BE14541A03208A0090A2B0 /* MovieCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				52BE144B1A02D0CF0090A2B0 /* Theatre.m */,
 				52BE14361A0152980090A2B0 /* Movie.h */,
 				52BE14371A0152980090A2B0 /* Movie.m */,
+				52BE14531A03208A0090A2B0 /* MovieCache.h */,
+				52BE14541A03208A0090A2B0 /* MovieCache.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				52BE14471A02B4290090A2B0 /* TheatresMapViewController.m in Sources */,
 				52BE14351A0151B00090A2B0 /* RMCollectionViewCell.m in Sources */,
 				52BE143B1A0178F80090A2B0 /* CoverFlowLayout.m in Sources */,
+				52BE14551A03208A0090A2B0 /* MovieCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
