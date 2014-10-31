@@ -19,7 +19,6 @@
         // initialize the dictionary
         self.posterImages = [[NSMutableDictionary alloc] initWithCapacity:newSize];
     }
-    
     return self;
 }
 
@@ -47,7 +46,7 @@
         NSArray *keysArray = [[NSArray alloc] initWithArray:[self.posterImages allKeys]];
         [self.posterImages removeObjectForKey:[keysArray objectAtIndex:self.counter]];
         [self.posterImages setObject:posterImage forKey:movie.idNumber];
-        if (self.counter == 4) {
+        if (self.counter == (self.size -1)) {
             self.counter = 0;
         } else {
             self.counter++;
@@ -69,7 +68,6 @@
             UIImage *poster = [self.posterImages objectForKey:key];
             return poster;
         }
-        
     }
     // return found image
     return nil;
